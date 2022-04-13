@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Замалиев Ринас</title>
+</head>
+<body>
+    <div id="main">
+        <div id="excerciseSettingDiv">Поставнока задачи</div>
+        <input id="dimensionInput" style="width: 250px;" placeholder="Введите размерность матрицы" type="number" max="9" min="2">
+        <input id="edgeInput" style="width: 250px;" placeholder="Введите количество ребер" type="number" max="9" min="2">
+        <button id="createBtn">Создать матрицу</button>
+        <button id="calculateBtn">Расчитать</button>
+        <select name="exerciseSelect" id="exerciseSelect">
+            <option value="1" selected disabled>Выберите задание</option>
+            <option value="4">Задание 4 (H)</option>
+            <option value="8">Задание 8 (D)</option>
+            <option value="12">Задание 12 (J)</option>
+            <option value="16">Задание 16 (P)</option>
+            <option value="20">Задание 20 (T)</option>
+        </select>
+        <div id="matrixDiv"></div>
+        <div id="resultDiv"></div>
+    </div>
+
+    <script type="module" src="./compiled/main.js"></script>
+</body>
+</html>
